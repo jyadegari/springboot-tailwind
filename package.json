@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-spring-boot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:postcss": "NODE_ENV=production postcss src/main/resources/static/css/style.tailwind.css -o target/classes/static/css/style.build.tailwind.css",
+    "watch:postcss": "NODE_ENV=development postcss src/main/resources/static/css/style.tailwind.css -o src/main/resources/static/css/style.dev.tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  }
+}
